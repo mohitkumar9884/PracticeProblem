@@ -1,6 +1,7 @@
 ﻿using PracticeProblem.Capital;
 using PracticeProblem.DuplicateElements;
 using PracticeProblem.FrequencyElement;
+using PracticeProblem.LowestSum;
 using PracticeProblem.MaxiMini;
 using PracticeProblem.PatternA;
 using PracticeProblem.PatternB;
@@ -16,7 +17,7 @@ namespace PracticeProblem
         {
             Console.WriteLine("Welcome to Practice problems.");
             Console.WriteLine("Please chose any One program from below options");
-            Console.WriteLine("\n1.Dupliment\n2.Uniquelement\n3.Frequelement\n4.MaxiMini\n5.PatternA\n6.PatternB\n7.ReverseString\n8.Sum\n9.Capital");
+            Console.WriteLine("\n1.Dupliment\n2.Uniquelement\n3.Frequelement\n4.MaxiMini\n5.PatternA\n6.PatternB\n7.ReverseString\n8.Sum\n9.Capital\n10.Lowest2Sum");
             Console.WriteLine(" ");
             int option = Convert.ToInt32(Console.ReadLine());
 
@@ -57,6 +58,10 @@ namespace PracticeProblem
                     case 9:
                     EachCapital eachCapital = new EachCapital();
                     eachCapital.First();
+                    break;
+                    case 10:
+                    Lowest lowest = new Lowest();
+                    lowest.Twosum();
                     break;
                     default:
                     Console.WriteLine("Invalid option.");
