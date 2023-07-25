@@ -3,6 +3,7 @@ using PracticeProblem.FrequencyElement;
 using PracticeProblem.MaxiMini;
 using PracticeProblem.PatternA;
 using PracticeProblem.PatternB;
+using PracticeProblem.ReverseString;
 using PracticeProblem.UniqueElement;
 
 namespace PracticeProblem
@@ -13,7 +14,7 @@ namespace PracticeProblem
         {
             Console.WriteLine("Welcome to Practice problems.");
             Console.WriteLine("Please chose any One program from below options");
-            Console.WriteLine("\n1.Dupliment\n2.Uniquelement\n3.Frequelement\n4.MaxiMini\n5.PatternA\n6.PatternB");
+            Console.WriteLine("\n1.Dupliment\n2.Uniquelement\n3.Frequelement\n4.MaxiMini\n5.PatternA\n6.PatternB\n7.ReverseString");
             Console.WriteLine(" ");
             int option = Convert.ToInt32(Console.ReadLine());
 
@@ -44,7 +45,8 @@ namespace PracticeProblem
                     patt.B();
                     break;
                     case 7:
-
+                    ReverseWord reverseWord = new ReverseWord();
+                    reverseWord.EachWord();
                     break;
                     default:
                     Console.WriteLine("Invalid option.");
