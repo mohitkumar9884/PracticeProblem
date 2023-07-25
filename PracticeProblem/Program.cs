@@ -2,6 +2,7 @@
 using PracticeProblem.FrequencyElement;
 using PracticeProblem.MaxiMini;
 using PracticeProblem.PatternA;
+using PracticeProblem.PatternB;
 using PracticeProblem.UniqueElement;
 
 namespace PracticeProblem
@@ -12,7 +13,7 @@ namespace PracticeProblem
         {
             Console.WriteLine("Welcome to Practice problems.");
             Console.WriteLine("Please chose any One program from below options");
-            Console.WriteLine("\n1.Dupliment\n2.Uniquelement\n3.Frequelement\n4.MaxiMini\n5.PatternA");
+            Console.WriteLine("\n1.Dupliment\n2.Uniquelement\n3.Frequelement\n4.MaxiMini\n5.PatternA\n6.PatternB");
             Console.WriteLine(" ");
             int option = Convert.ToInt32(Console.ReadLine());
 
@@ -37,6 +38,10 @@ namespace PracticeProblem
                     case 5:
                     Pattern pattern = new Pattern();
                     pattern.A();
+                    break;
+                    case 6:
+                    Patt patt = new Patt();
+                    patt.B();
                     break;
                     default:
                     Console.WriteLine("Invalid option.");
