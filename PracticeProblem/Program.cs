@@ -43,6 +43,9 @@ namespace PracticeProblem
                     Patt patt = new Patt();
                     patt.B();
                     break;
+                    case 7:
+
+                    break;
                     default:
                     Console.WriteLine("Invalid option.");
                     break;
